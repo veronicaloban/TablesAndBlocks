@@ -1,0 +1,8 @@
+<app-search
+    (searchValue)="setSearchValue($event)"></app-search>
+
+<div class="cards">
+    <ng-container *ngFor="let user of usersData">
+        <mat-card class="card" (click)="selectUser(user)">{{ user?.login}}</mat-card>
+    </ng-container>
+</div>
