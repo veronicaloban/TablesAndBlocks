@@ -1,0 +1,11 @@
+<div class="search-container">
+    <mat-form-field appearance="fill" [formGroup]="searchForm">
+        <mat-label>Ввведите запрос</mat-label>
+        
+        <input matInput formControlName="searchFormControl">
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="onClickSearch()" [disabled]="searchForm.invalid">
+        Search
+    </button>
+</div>

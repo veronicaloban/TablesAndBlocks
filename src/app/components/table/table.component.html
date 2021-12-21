@@ -1,0 +1,10 @@
+<app-search
+    class="search"
+    (searchValue)="setSearchValue($event)"></app-search>
+
+<div class="result-table" *ngIf="usersData?.length">
+    <app-table-item
+        [displayedColumns]="displayedColumns"
+        [usersData]="usersData"
+        (selectUser)="selectUser($event)"></app-table-item>
+</div>

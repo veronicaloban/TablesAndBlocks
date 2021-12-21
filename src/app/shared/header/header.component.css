@@ -1,0 +1,20 @@
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+    gap: 8px;
+}
+
+.navbar__item {
+    list-style-type: none;
+}
+
+.navbar__link {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+.navbar__link_active {
+    border-bottom: 1px solid silver;
+}
